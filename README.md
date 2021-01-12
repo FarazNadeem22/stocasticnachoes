@@ -21,7 +21,9 @@ validate_list = get_list(validation_path)
 
 labels = get_labels(train_path)
 print(labels)
+
 #create label index for easy lookup
+
 label2index = dict((name, index) for index, name in enumerate(labels))
 index2label = dict((index, name) for index, name in enumerate(labels))
 num_classes = len(labels)
@@ -32,9 +34,11 @@ val_x,val_y = read_images(validate_list, validation_path, label2index, "validate
 plot_sample_images(train_x, train_y,index2label,"Images from Train List")
 
 #Normlalize 
+
 train_x, val_x = normalize_image_2(train_x,val_x)
 
 #One hot encode
+
 train_y,val_y = one_hot_encode(train_y,val_y, num_classes)
 
 display_info(train_x,val_x,train_y,val_y)
