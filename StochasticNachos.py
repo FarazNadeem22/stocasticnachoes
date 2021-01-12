@@ -1,3 +1,7 @@
+# By Muhammad Ali Faraz AKA Faraz Nadeem Siddiqi 
+# 1/12/2021
+# Computer Vision
+
 import os
 import cv2 
 import numpy as np
