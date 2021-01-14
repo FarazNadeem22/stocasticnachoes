@@ -1,0 +1,1 @@
+This is just an example file that I am trying to learn to push to github via command line using git bash
